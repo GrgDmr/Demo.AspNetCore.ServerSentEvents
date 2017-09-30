@@ -4,6 +4,10 @@ About HTTP2 & SSE
 https://www.igvita.com/2013/06/12/innovating-with-http-2.0-server-push/
 
 About HTTP2 & ASP.Net Core
+DotNetUserGroup/2017-02-28 HTTP2 Server Push with ASP.NET Core/ - https://github.com/Jetabroad/DotNetUserGroup/tree/master/2017-02-28%20HTTP2%20Server%20Push%20with%20ASP.NET%20Core
+
+https://github.com/aspnet/KestrelHttpServer/pull/1991
+
 https://www.tpeczek.com/2017/04/http2-with-server-push-proof-of-concept.html
 https://dzone.com/articles/http2-with-server-push-proof-of-concept-for-aspnet
 
