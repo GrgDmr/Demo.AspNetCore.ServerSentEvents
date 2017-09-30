@@ -8,6 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Lib.AspNetCore.ServerSentEvents;
 using Demo.AspNetCore.ServerSentEvents.Services;
+using System.IO;
+using Microsoft.AspNetCore.Server.HttpSys;
 
 namespace Demo.AspNetCore.ServerSentEvents
 {
@@ -47,15 +49,19 @@ namespace Demo.AspNetCore.ServerSentEvents
             {
                 app.UseDeveloperExceptionPage();
             }
-            
-            app.UseResponseCompression()
-                .MapServerSentEvents("/see-heartbeat")
-                .MapServerSentEvents("/sse-notifications", serviceProvider.GetService<NotificationsServerSentEventsService>())
-                .UseStaticFiles()
-                .UseMvc(routes =>
-                {
-                    routes.MapRoute(name: "default", template: "{controller=Notifications}/{action=sse-notifications-receiver}");
-                });
+
+            var host = new WebHostBuilder()
+            .UseContentRoot(Directory.GetCurrentDirectory())
+            .UseHttpSys(options =>
+            {
+                options.UrlPrefixes.Add("http://localhost:63861");
+                options.UrlPrefixes.Add("https://localhost:44365");
+                options.Authentication.Schemes = AuthenticationSchemes.None;
+                options.Authentication.AllowAnonymous = true;
+            })
+            .Build();
+
+            host.Run();   
         }
         #endregion
     }
