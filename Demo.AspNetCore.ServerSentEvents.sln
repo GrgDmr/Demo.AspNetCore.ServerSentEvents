@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.4
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.AspNetCore.ServerSentEvents", "Demo.AspNetCore.ServerSentEvents\Demo.AspNetCore.ServerSentEvents.csproj", "{4D928371-6971-4259-903D-876181A9BC8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{86BE7AF2-DC2A-4FD5-B1BD-F04C47A5EF1E}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,7 +24,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{4D928371-6971-4259-903D-876181A9BC8F} = {0AD68EE5-16EA-4738-B0ED-6093CF394BFB}
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A037852-4A3D-4C14-9BD4-1EEB982CAFCC}
 	EndGlobalSection
 EndGlobal
