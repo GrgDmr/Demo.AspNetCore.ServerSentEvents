@@ -1,3 +1,14 @@
+# Fork from https://github.com/tpeczek/Demo.AspNetCore.ServerSentEvents
+
+Articoli di riferimento:
+https://www.tpeczek.com/2017/02/server-sent-events-sse-support-for.html
+https://dzone.com/articles/server-sent-events-sse-support-for-aspnet-core
+
+* https://hpbn.co/
+* http://caniuse.com/#search=server-sent
+* https://www.html5rocks.com/en/tutorials/eventsource/basics/
+
+
 # Demo.AspNetCore.ServerSentEvents
 
 Application for demonstrating functionality of [Lib.AspNetCore.ServerSentEvents](https://github.com/tpeczek/Lib.AspNetCore.ServerSentEvents).
