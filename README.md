@@ -1,5 +1,12 @@
 # Fork from https://github.com/tpeczek/Demo.AspNetCore.ServerSentEvents
 
+About HTTP2 & SSE
+https://www.igvita.com/2013/06/12/innovating-with-http-2.0-server-push/
+
+About HTTP2 & ASP.Net Core
+https://www.tpeczek.com/2017/04/http2-with-server-push-proof-of-concept.html
+https://dzone.com/articles/http2-with-server-push-proof-of-concept-for-aspnet
+
 Articoli di riferimento:
 https://www.tpeczek.com/2017/02/server-sent-events-sse-support-for.html
 https://dzone.com/articles/server-sent-events-sse-support-for-aspnet-core
